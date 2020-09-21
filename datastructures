@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct student
+{
+ int age,marks,studentid;
+};
+int main()
+{
+struct student s[20];
+ int n,i;
+  printf("enter the number of entries");
+ scanf("%d",&n);
+ printf("enter the details of the entry");
+ for(i=0;i<n;i++)
+ scanf("%d%d%d",&s[i].age,&s[i].marks,&s[i].studentid);
+ for(i=0;i<n;i++)
+ {
+if(s[i].age>20&&s[i].marks>=0&&s[i].marks<100)
+ printf("valid entry");
+ else
+{
+printf("invalid entry");
+exit(i);
+ }
+ }
+for(i=0;i<n;i++)
+if(s[i].age>=20&&s[i].marks>=65);
+printf("qualifiied for admission");
+}
